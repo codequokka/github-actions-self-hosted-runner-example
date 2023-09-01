@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  say_hello:
+  echo_hostname:
     runs-on: [self-hosted, my-runner]
     steps:
       - name: Echo host name
