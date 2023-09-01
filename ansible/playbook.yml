@@ -1,0 +1,7 @@
+---
+- name: Sample playbook
+  hosts: localhost
+  become: true
+  tasks:
+    - ansible.builtin.debug:
+      msg: Hello world!
