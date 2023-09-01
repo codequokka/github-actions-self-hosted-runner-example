@@ -1,0 +1,11 @@
+name: Sample
+
+on:
+  push:
+
+jobs:
+  say_hello:
+    runs-on: [self-hosted, my-runner]
+    steps:
+      - name: Hello World
+        run: echo "Hello World!"
