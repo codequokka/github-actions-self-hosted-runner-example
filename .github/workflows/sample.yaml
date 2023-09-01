@@ -13,6 +13,10 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v3
 
+      - name: Run ls command
+        run: |
+          ls -alt
+
       - name: Run playbook
         uses: dawidd6/action-ansible-playbook@v2
         with:
