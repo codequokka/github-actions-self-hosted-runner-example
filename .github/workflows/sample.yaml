@@ -9,3 +9,6 @@ jobs:
     steps:
       - name: Echo host name
         run: echo $(hostname)
+
+      - name: Checkout the repo
+        uses: actions/checkout@v3
