@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  echo_hostname:
+  run_playbook:
     runs-on: [self-hosted, my-runner]
     steps:
       - name: Echo host name
@@ -21,6 +21,5 @@ jobs:
         uses: dawidd6/action-ansible-playbook@v2
         with:
           playbook: playbook.yml
-          directory: ./ansible
           options: |
-            --inventory ./ansible/hosts.ini
+            --inventory hosts.ini
